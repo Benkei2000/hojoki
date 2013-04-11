@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+h1, h2{
+        color:#8b6c29;
+        margin-bottom: 0.5em;
+}
+
+html, body{
+ font-family: sans-serif;
+ background-color: gray;
+ background-image: image-url("background.jpg");
+ background-attachment: fixed;
+ text-align: center;
+}
+
+header, nav, section, footer, article, aside{
+    display: block;
+}
+
+header{
+    /*background-color: blue;*/
+    background-image: image-url("header.jpg");
+    height: 200px;
+    width: 1000px;
+    background-repeat: no-repeat;
+}
+
+    header p{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    color: white;
+    }
+    header li{
+    text-align: right;
+    padding-right: 20px;
+    list-style-type: none;
+    }
+    header a{
+    color: white;
+    }
+
+
+nav{
+   
+}
+section{
+    /*background-color: lightblue;*/
+    
+}
+
+article{
+    /*background-color: #FF00FF;*/ 
+    margin-left: 250px;
+    margin-right: 195px;
+    padding-top: 2em;
+    padding-bottom: 100px;
+    
+}
+    article p{
+        line-height: 1.5em;
+        padding-bottom: 1em;
+        font-size: 16pt;
+    }
+    article ul,ol{
+        margin-left: 2em;
+        margin-bottom: .5em;
+    }
+
+aside{
+    /*background-color: #008080;*/
+    width:175px;
+    float:right;
+}
+    aside ul{
+        list-style-type: none;
+    }
+    aside li{
+        width:100px;
+        padding-bottom: 10px;
+    }
+
+footer{
+    background-image: image-url("navbar-top.png");
+    width: 1000px;
+    height: 1.3em;
+    color: white;
+    background-repeat: repeat;
+    text-align: center;
+    clear:both ;
+    }
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+#mittig{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+#steuerungoben{
+    /*background-color: red;*/
+    width: 1000px;
+    background-image: image-url("navbar-top.png");
+    height: 1.4em;
+}    
+    #steuerungoben li{
+    display: inline;
+    }
+    #steuerungoben a{
+    color: white;
+    display: block;
+    float: left;
+    line-height: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    }
+    #steuerungoben a:hover{
+    background-image: image-url("navbar-top-hover.png");
+    }
+     
+    
+#steuerunglinks{
+    /*background-image: url(durchsichtig.png);
+    background-repeat: repeat;*/
+    clear: both;
+    font-size: 15pt;
+    margin-top: 1em;
+    float: left;
+    width: 250px;
+
+}
+    #steuerunglinks ul{
+        margin-left: 1em;
+        list-style-type: none;
+
+    }
+    #steuerunglinks ul ul{
+        margin-top: 1em;
+        margin-left: 1em;
+        list-style-type: square;      
+    }
+    #steuerunglinks li{
+    margin-bottom: 1.2em;
+    color: #8E9890;
+    }
+
+/*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: repeat-x scroll 50% 50% red;
+    border: 1px solid blue;
+    color: grey;
+    font-weight: normal;
+}*/
+.ui-accordion-content, .ui-accordion-content-active{
+    height:auto;
+}
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2px;
+    padding: .5em .5em .5em .7em;
+    min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+    /*padding-left: 2.2em;*/
+}
+.ui-accordion .ui-accordion-noicons {
+    padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 1em;
+    border-top: 0;
+    overflow: auto;
+}
+
+#durchsichtig{
+    /*background-image: url(durchsichtig.png);
+    background-repeat: repeat;*/
+    background-color: hsla(66, 100%, 100%, 1);
+}
+
+/*Markup article*/
+.pa.active{
+  color: blue;
+}
+.vs.active{
+  color: green;
+}
+.subj.active{
+  color: red;
+}
+.par1, .par2, .par3, .par4, .par5{
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+    .par1.active{
+    border-color: orange;
+    margin: 0;
+    border-style: dotted;
+    border-width: 2px;
+    }
+    .par2.active{
+    border-color: red;
+    margin: 0;
+    border-style: dotted;
+    border-width: 2px;
+    }
+    .par3.active{
+    border-color: blue;
+    margin: 0;
+    border-style: dotted;
+    border-width: 2px;
+    }
+    .par4.active{
+    border-color: green;
+    margin: 0;
+    border-style: dotted;
+    border-width: 2px;
+    }
+    .par5.active{
+    border-color: yellow;
+    margin: 0;
+    border-style: dotted;
+    border-width: 2px;
+    }
+
+
+/*Buttons aside*/
+button{ 
+    width:120px;
+    height: 50px;
+    font-size: 16pt;
+}
+button.pa.active{
+    color:white;
+    background-color: blue;
+}
+button.vs.active{
+    color:white;
+    background-color: green;
+}
+
+button.subj.active{
+    color:white;
+    background-color: red;
+}
+button.rentai.active{
+    background-color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    border-bottom: 1px solid #999999;
+}
+button.renyo.active{
+    background-color: white;
+    text-decoration: underline;
+    border-bottom: 1px solid #999999;
+}
+button.par.active{
+    background-color: white;
+    color: orange;
+    border-style: dotted;
+    border-color: orange;
+}
+
+/*Tooltip-CSS*/
+ .ui-tooltip, .arrow:after {
+background: black;
+border: 2px solid white;
+}
+.ui-tooltip {
+padding: 10px 20px;
+color: white;
+/*border-radius: 20px;*/
+font: bold 14px "Helvetica Neue", Sans-Serif;
+text-transform: uppercase;
+/*box-shadow: 0 0 7px black;*/
+height:20px;
+width:100px;
+}
+.arrow {
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.arrow.top {
+top: -16px;
+bottom: auto;
+}
+.arrow.left {
+left: 20%;
+}
+.arrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+box-shadow: 6px 5px 9px -9px black;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+tranform: rotate(45deg);
+}
+.arrow.top:after {
+bottom: -20px;
+top: auto;
+}

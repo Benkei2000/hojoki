@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>よみたき古文</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<meta charset="UTF-8">
+        <!-- Compability with older browsers -->
+        <script>
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("footer");
+        </script>
+<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">  -->
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+
+<!-- Accordion -->
+<script>
+    $(function() {
+    $( "#accordion" ).accordion({
+    collapsible: true,
+    heightStyle: "content",
+    active:false
+    });   
+});
+</script>
+
+<!-- Tooltip -->
+<script>
+    $(function() {
+    $( document ).tooltip({
+    position: {
+    my: "center bottom-20",
+    at: "center top",
+    using: function( position, feedback ) {
+    $( this ).css( position );
+    $( "<div>" )
+    .addClass( "arrow" )
+    .addClass( feedback.vertical )
+    .addClass( feedback.horizontal )
+    .appendTo( this );
+    }
+    }
+    });
+});
+</script>
+
+<!-- Checkbox sidebar -->
+<script>
+    $(function() {
+    $( "#check" ).button();
+    $( "#format" ).buttonset();
+    });
+</script>
+
+<style>
+#format { margin-top: 2em; }
+</style>
+
+<script>
+      $(function() {
+        $("#vs").on("click", function(el) {
+          $(".vs").toggleClass("active") 
+        });
+        $("#pa").on("click", function(el) {
+          $(".pa").toggleClass("active")
+        });
+        $("#subj").on("click", function(el) {
+          $(".subj").toggleClass("active")
+        });
+        $("#rentai").on("click", function(el) {
+          $(".rentai").toggleClass("active")
+        });
+        $("#renyo").on("click", function(el) {
+          $(".renyo").toggleClass("active")
+        });
+        $("#par").on("click", function(el) {
+          $(".par").toggleClass("active")
+          $(".par1").toggleClass("active")
+          $(".par2").toggleClass("active")
+          $(".par3").toggleClass("active")
+          $(".par4").toggleClass("active")
+          $(".par5").toggleClass("active")
+        });
+      });
+      
+</script>
+
+</head>
+<body>
+<div id="mittig">
+    <header>
+    <p>よみたき古文<br>- 方丈記 -</p>
+    </header>
+    
+<div id="durchsichtig">  
+    <nav id="steuerungoben">
+        <ul>
+            <li><a href="index.html">方丈記</a></li>
+        
+        </ul>
+    </nav>
+    
+<nav id="steuerunglinks">
+    <div id="accordion">
+        <% Entry.all.group_by(&:title).each do |k, v| %>        	
+        	<h3><%= k %></h3>
+        	<div>
+            	<ul>
+                	<% v.each do |entry| %>
+                	 <li><%= link_to entry.chapter, entry_path(entry.id) %></li>
+                	<% end %>
+            	</ul>   
+        	</div>
+        <% end %>
+    </div>
+</nav>        
+        
+    
+<section>
+
+ <aside>
+        <div id="format">
+        <ul>
+            <li><button id="pa" class="pa">助詞</button></li>
+            <li><button id="vs" class="vs">助動詞</button></li>
+            <li><button id="subj" class="subj">主語</button></li>
+            <li><button id="rentai"class="rentai">連体形</button></li>
+            <li><button id="renyo" class="renyo">連用形</button></li>
+            <li><button id="par" class="par">並列の文型</button></li>      
+        </ul>
+        </div>
+    </aside>
+    
+    
+    <article>
+    
+     <%= yield %>
+    </article>    
+    
+</section>
+
+<footer><p><a href="http://www.youtube.com/watch?v=PpccpglnNf0" target=blank><span class="easteregg">©</span></a>2013 よみたき古文 <a href="#">Impressum</a></p></footer>
+
+</body>
+</html>
