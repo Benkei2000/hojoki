@@ -5,11 +5,11 @@
  <p><%= @entry.content.html_safe %></p>
 
 <% if @previous_entry %>
-	<%= link_to 'Previous', entry_path(@previous_entry) %> 
+	<%= link_to '前のチャプター', entry_path(@previous_entry) %> 
 <% end %>
 <% if @previous_entry && @next_entry %>
 	|
 <% end %>
 <% if @next_entry %>
-	<%= link_to 'Next', entry_path(@next_entry) %>
+	<%= link_to '次のチャプター', entry_path(@next_entry) %>
 <% end %>

@@ -207,39 +207,83 @@ footer{
 .subj.active{
   color: red;
 }
-.par1, .par2, .par3, .par4, .par5{
-  margin-left: 2px;
-  margin-right: 2px;
+.rentai{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.renyo{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.rentai.active{
+    margin: 0;
+    border-color: #A304C3;
+    border-style: solid;
+    border-width: 2px;
+}
+.renyo.active{
+    margin: 0;
+    border-color: #04C354;
+    border-style: solid;
+    border-width: 2px;
+}
+.par1, .par2, .par3, .par4, .par5, .par6, .par7, .par8, .par9{
+  margin-left: 4px;
+  margin-right: 4px;
   
 }
     .par1.active{
-    border-color: orange;
-    margin: 0;
-    border-style: dotted;
+    border-color: #FF5500;
+    margin: 2px;
+    border-style: dashed;
     border-width: 2px;
     }
     .par2.active{
-    border-color: red;
-    margin: 0;
-    border-style: dotted;
+    border-color: #00AAFF;
+    margin: 2px;
+    border-style: dashed;
     border-width: 2px;
     }
     .par3.active{
-    border-color: blue;
-    margin: 0;
-    border-style: dotted;
+    border-color: #FF5500;
+    margin: 2px;
+    border-style: dashed;
     border-width: 2px;
     }
     .par4.active{
-    border-color: green;
-    margin: 0;
-    border-style: dotted;
+    border-color: #00AAFF;
+    margin: 2px;
+    border-style: dashed;
     border-width: 2px;
     }
     .par5.active{
-    border-color: yellow;
-    margin: 0;
-    border-style: dotted;
+    border-color: #FF5500;
+    margin: 2px;
+    border-style: dashed;
+    border-width: 2px;
+    }
+    .par6.active{
+    border-color: #00AAFF;
+    margin: 2px;
+    border-style: dashed;
+    border-width: 2px;
+    }
+    .par7.active{
+    border-color: #FF5500;
+    margin: 2px;
+    border-style: dashed;
+    border-width: 2px;
+    }
+    .par8.active{
+    border-color: #00AAFF;
+    margin: 2px;
+    border-style: dashed;
+    border-width: 2px;
+    }
+    .par9.active{
+    border-color: #FF5500;
+    margin: 2px;
+    border-style: dashed;
     border-width: 2px;
     }
 
@@ -265,20 +309,18 @@ button.subj.active{
 }
 button.rentai.active{
     background-color: white;
-    text-decoration: underline;
-    text-decoration-color: red;
-    border-bottom: 1px solid #999999;
+    
 }
 button.renyo.active{
     background-color: white;
-    text-decoration: underline;
-    border-bottom: 1px solid #999999;
 }
 button.par.active{
     background-color: white;
-    color: orange;
-    border-style: dotted;
-    border-color: orange;
+    border-style: dashed;
+    border-right-color: #FF5500;
+    border-top-color: #FF5500;
+    border-left-color: #00AAFF;
+    border-bottom-color: #00AAFF;
 }
 
 /*Tooltip-CSS*/
