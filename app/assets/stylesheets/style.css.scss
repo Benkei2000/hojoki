@@ -131,28 +131,33 @@ footer{
      
     
 #steuerunglinks{
-    /*background-image: url(durchsichtig.png);
-    background-repeat: repeat;*/
+    background-image: image-url("background_nav.jpg");
+    background-repeat: repeat;
+    color: #1D2F23;
+    box-shadow: 0px 0px 15px #1D2F23;
     clear: both;
     font-size: 15pt;
-    margin-top: 1em;
+    margin-right: 1em;
     float: left;
-    width: 250px;
+    width: 245px;
 
 }
     #steuerunglinks ul{
         margin-left: 1em;
         list-style-type: none;
-
     }
     #steuerunglinks ul ul{
         margin-top: 1em;
         margin-left: 1em;
-        list-style-type: square;      
+        list-style-type: square;
+
     }
     #steuerunglinks li{
-    margin-bottom: 1.2em;
-    color: #8E9890;
+    margin-bottom: 1em;
+    }
+    #steuerunglinks a{
+        text-decoration: none;
+        color: #1D2F23; 
     }
 
 /*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -230,61 +235,61 @@ footer{
     border-width: 2px;
 }
 .par1, .par2, .par3, .par4, .par5, .par6, .par7, .par8, .par9{
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
   
 }
     .par1.active{
     border-color: #FF5500;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par2.active{
     border-color: #00AAFF;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par3.active{
     border-color: #FF5500;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par4.active{
     border-color: #00AAFF;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par5.active{
     border-color: #FF5500;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par6.active{
     border-color: #00AAFF;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par7.active{
     border-color: #FF5500;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par8.active{
     border-color: #00AAFF;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
     .par9.active{
     border-color: #FF5500;
-    margin: 2px;
+    margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
