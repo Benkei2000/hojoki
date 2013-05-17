@@ -47,20 +47,10 @@ header{
     color: white;
     }
 
-
-nav{
-   
-}
-section{
-    /*background-color: lightblue;*/
-    
-}
-
 article{
-    /*background-color: #FF00FF;*/ 
     margin-left: 250px;
     margin-right: 195px;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 100px;
     
 }
@@ -239,61 +229,18 @@ footer{
   margin-right: 2px;
   
 }
-    .par1.active{
+    .par1.active, .par3.active, .par5.active, .par7.active, .par9.active{
     border-color: #FF5500;
     margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
-    .par2.active{
+    .par2.active, .par4.active, .par6.active, .par8.active{
     border-color: #00AAFF;
     margin: 0;
     border-style: dashed;
     border-width: 2px;
     }
-    .par3.active{
-    border-color: #FF5500;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par4.active{
-    border-color: #00AAFF;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par5.active{
-    border-color: #FF5500;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par6.active{
-    border-color: #00AAFF;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par7.active{
-    border-color: #FF5500;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par8.active{
-    border-color: #00AAFF;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-    .par9.active{
-    border-color: #FF5500;
-    margin: 0;
-    border-style: dashed;
-    border-width: 2px;
-    }
-
 
 /*Buttons aside*/
 button{ 
@@ -338,12 +285,13 @@ border: 2px solid white;
 .ui-tooltip {
 padding: 10px 20px;
 color: white;
+position: relative;
+display: block;
 /*border-radius: 20px;*/
-font: bold 14px "Helvetica Neue", Sans-Serif;
-text-transform: uppercase;
+/*font: bold 14px "Helvetica Neue", Sans-Serif;*/
 /*box-shadow: 0 0 7px black;*/
 height:20px;
-width:100px;
+max-width: 550px;
 }
 .arrow {
 width: 70px;
