@@ -113,7 +113,7 @@ footer{
     line-height: 1.4em;
     text-align: center;
     text-decoration: none;
-    width: 230px;
+    width: 245px;
     }
     #steuerungoben a:hover{
     background-image: image-url("navbar-top-hover.png");
@@ -187,7 +187,6 @@ footer{
     border-top: 0;
     overflow: auto;
 }
-
 #durchsichtig{
     /*background-image: url(durchsichtig.png);
     background-repeat: repeat;*/
@@ -247,23 +246,23 @@ button{
     width:120px;
     height: 50px;
     font-size: 16pt;
+    background-image: image-url("background_nav.jpg");
 }
 button.pa.active{
-    color:white;
-    background-color: blue;
+    color:blue;
+    /*background-color: blue;*/
 }
 button.vs.active{
-    color:white;
-    background-color: green;
+    color:green;
+    /*background-color: green;*/
 }
 
 button.subj.active{
-    color:white;
-    background-color: red;
+    color:red;
+    /*background-color: red;*/
 }
 button.rentai.active{
-    background-color: white;
-    
+    background-color: white;   
 }
 button.renyo.active{
     background-color: white;
