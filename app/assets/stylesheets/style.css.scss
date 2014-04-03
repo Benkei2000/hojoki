@@ -54,6 +54,10 @@ article{
     padding-bottom: 100px;
     
 }
+    article a{
+        text-decoration: none;
+        color:black;
+    }
     article p{
         line-height: 1.5em;
         padding-bottom: 1em;
@@ -148,6 +152,7 @@ footer{
     #steuerunglinks a{
         text-decoration: none;
         color: #1D2F23; 
+        font-size: 14pt;
     }
 
 /*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -290,7 +295,7 @@ display: block;
 /*font: bold 14px "Helvetica Neue", Sans-Serif;*/
 /*box-shadow: 0 0 7px black;*/
 height:20px;
-max-width: 550px;
+max-width: 100px;
 }
 .arrow {
 width: 70px;
